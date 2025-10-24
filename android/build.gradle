@@ -68,20 +68,14 @@ android {
 protobuf {
     // Configure the protoc executable
     protoc {
-        if (osdetector.os == 'osx') {
-            if (osdetector.arch == 'aarch_64' || osdetector.arch == 'arm64') {
-                artifact = 'com.google.protobuf:protoc:4.33.0:osx-aarch_64'
-            } else {
-                artifact = 'com.google.protobuf:protoc:4.33.0:osx-x86_64'
-            }
-        } else {
-            artifact = 'com.google.protobuf:protoc:4.33.0'
-        }
+        artifact = 'com.google.protobuf:protoc:4.33.0'
     }
     generateProtoTasks {
-        all().each { task ->
+        all().configureEach { task ->
             task.builtins {
-                java { option 'lite' }
+                java {
+                    option "lite"
+                }
             }
         }
     }

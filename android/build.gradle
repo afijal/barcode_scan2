@@ -1,8 +1,8 @@
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    id "dev.flutter.flutter-gradle-plugin"
     id "com.google.protobuf" version "0.9.5"
+    id "dev.flutter.flutter-gradle-plugin"
 }
 
 group 'de.mintware.barcode_scan'
@@ -12,6 +12,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 

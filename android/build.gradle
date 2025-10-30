@@ -8,23 +8,6 @@ plugins {
 group 'de.mintware.barcode_scan'
 version '1.0-SNAPSHOT'
 
-// buildscript {
-//     ext.kotlin_version = '1.8.0'
-//     ext.protobuf_version = '0.9.1'
-//     ext.protocVersion = '3.21.12'
-//     ext.javaliteVersion = '3.11.0'
-//     repositories {
-//         google()
-//         mavenCentral()
-//     }
-
-//     dependencies {
-//         classpath 'com.android.tools.build:gradle:7.3.1'
-//         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-//         classpath "com.google.protobuf:protobuf-gradle-plugin:$protobuf_version"
-//     }
-// }
-
 allprojects {
     repositories {
         google()

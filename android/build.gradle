@@ -1,7 +1,7 @@
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    id "com.google.protobuf" version "0.9.5"
+    id "com.google.protobuf"
     id "dev.flutter.flutter-gradle-plugin"
 }
 
